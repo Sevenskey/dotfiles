@@ -27,7 +27,6 @@ let g:Powerline_colorscheme='solarized256'
 
 "set clipboard+=unnamed "连接vim和系统的剪贴板
 
-colorscheme Tomorrow-Night-Bright
 
 "remove the background color
 "hi Normal guibg=NONE ctermbg=NONE 
@@ -74,10 +73,17 @@ Plugin 'chilicuil/vim-sml-coursera' "Programming Languages
 
 Plugin 'vim-scripts/Conque-GDB' "gdb plug
 Plugin 'Lokaltog/vim-powerline' "powerline
+Plugin 'morhetz/gruvbox' "Grubox colorscheme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"Gruvbox colorscheme configuration
+set background=dark
+let g:gruvbox_bold=1
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
