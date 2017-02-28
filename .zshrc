@@ -2,15 +2,16 @@
   export ZSH=/home/sevenskey/.oh-my-zsh
   export TERM=xterm-256color
   export HISTTIMEFORMAT='%F %T '
-  export PATH="$PATH:/home/sevenskey/Application/node-v4.4.7-linux-x64/bin"
-  xset r rate 350 35
+  export PATH="$PATH:./node_modules/.bin"
+# export PATH="$PATH:/home/sevenskey/Application/node-v4.4.7-linux-x64/bin:/home/sevenskey/Application/sml/bin"
+  xset r rate 300 50
 
   stty -ixon # To disable Software Flow Control
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="lambda" 
+ZSH_THEME="steeef" 
 #ys avit eastwood gallois kardan lambda maran steeef
 
 # Uncomment the following line to use case-sensitive completion.
@@ -92,17 +93,23 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -l'
-alias ssk='sudo sslocal -c /etc/shadowsocks.json -d start'
-alias sskt='sudo sslocal -c /etc/shadowsocks.json -d stop'
+alias ssk='sudo python /home/sevenskey/Application/shadowsocksr/shadowsocks/local.py -c /etc/shadowsocks.json -d start'
+alias sssk='sudo sslocal -c /etc/shadowsocks2.json -d start'
+alias sskt='sudo python /home/sevenskey/Application/shadowsocksr/shadowsocks/local.py -c /etc/shadowsocks.json -d stop'
+alias ssskt='sudo sslocal -c /etc/shadowsocks2.json -d stop'
 alias pyweb='python2 -m SimpleHTTPServer '
 alias pxc='proxychains'
 alias cws='sudo wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant/connect.conf'
 alias todo='cat ~/.todo'
 alias etodo='vim ~/.todo'
 alias minecraft='cd ~/Application/Minecraft1.8.1 && java -jar HMCL-2.3.5.5.jar'
-alias timetable='chromium ~/Downloads/孙梦茹\(2016-2017-1\)课表.pdf'
-alias rm='rm -i'
+alias rm='rm -I'
 
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias free='free -h'
+alias bandwagon='ssh -p 26102 root@23.83.229.92'
+alias qcloud='ssh sevenskey@123.206.7.213'
+alias volatility='python2 /home/sevenskey/Application/volatility/vol.py'
+alias a='python2 /home/sevenskey/Application/volatility/vol.py -f ~/share_win7/USER-QGCIAMH5BL-20161214-071445.raw --profile=Win7SP0x86'
+alias win7_vm='vboxsdl --startvm win7'
