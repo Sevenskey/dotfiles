@@ -56,6 +56,10 @@ Plugin 'groenewege/vim-less' "Less.js color scheme
 Plugin 'tpope/vim-pathogen' "manage runtime path
 Plugin 'scrooloose/nerdcommenter' "comment assistant 注释快捷键
 Plugin 'qpkorr/vim-bufkill'
+Plugin 'darthmall/vim-vue' " Vue file color scheme
+Plugin 'nanotech/jellybeans.vim' " jellybeans colorscheme
+Plugin 'tomasr/molokai' " molokai colorscheme
+Plugin 'goatslacker/mango.vim' " colorscheme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,10 +67,12 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "Gruvbox colorscheme configuration
-set background=dark
 let g:gruvbox_bold=1
 let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_contrast_light='soft'
 colorscheme gruvbox
+set background=dark
+"hi Normal guibg=black
 "remove the background color
 "hi Normal guibg=NONE ctermbg=NONE 
 
