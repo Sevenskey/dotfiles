@@ -10,14 +10,6 @@ set softtabstop=2
 set expandtab
 set relativenumber
 set cursorline "当前行高亮
-set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936 "自动识别编码
-"set clipboard+=unnamed "连接vim和系统的剪贴板
-set guioptions-=m "menu
-set guioptions-=T "toolbar
-set guioptions-=r "right-hand scroll bar
-set guioptions-=L "left-hand scroll bar
-set gcr=a:block-blinkon0 "使光标静止
-set guifont=Consolas:h14
 
 au BufRead,BufNewFile *.ss set softtabstop=2
 
@@ -51,7 +43,6 @@ call vundle#end()            " required
 
 filetype plugin indent on    " required
 
-set termguicolors
 let ayucolor="mirage" "light mirage dark
 colorscheme ayu
 
